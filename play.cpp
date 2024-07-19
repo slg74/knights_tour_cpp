@@ -7,16 +7,16 @@ int count_x(const char* p, char x) {
     }
 
     int count = 0;
-    for (; *p != 0; p++) {
-        if (*p == x) {
+    while (*p) {
+        if (*p == x) 
             count++; 
-        }
+        ++p;
     }
     return count;
 }
 
 
-int main(void) {
+int main() {
     //char* a = { "abcabcabcabcabc" }; - generates warning, requires cast below
     char* a = (char *)"abcabcabcabcabc";
     char s = 'a';
