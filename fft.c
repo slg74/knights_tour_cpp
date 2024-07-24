@@ -23,10 +23,10 @@ void _fft(cplx buf[], cplx out[], int n, int step)
  
 void fft(cplx buf[], int n)
 {
-	cplx out[n];
-	for (int i = 0; i < n; i++) out[i] = buf[i];
+    cplx out[n];
+    for (int i = 0; i < n; i++) out[i] = buf[i];
  
-	_fft(buf, out, n, 1);
+    _fft(buf, out, n, 1);
 }
  
  
