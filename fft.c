@@ -2,7 +2,15 @@
 #include <math.h>
 #include <complex.h>
 
-// fft example from rosetta code
+//------------------------------------------------------------------//
+//                                                                  //
+// fft example from rosetta code with mods for playing around with  //
+// more than 8 bits at a time.                                      //
+//                                                                  //
+// compile and run: gcc -o fft fft.c -std=c17 & ./fft               //
+//                                                                  //
+//------------------------------------------------------------------//
+
  
 double PI;
 typedef double complex cplx;
