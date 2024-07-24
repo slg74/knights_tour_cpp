@@ -31,12 +31,12 @@ void fft(cplx buf[], int n)
  
  
 void show(const char * s, cplx buf[], int BITS) {
-	printf("%s", s);
-	for (int i = 0; i < BITS; i++)
-		if (!cimag(buf[i]))
-			printf("%g ", creal(buf[i]));
-		else
-			printf("(%g, %g) ", creal(buf[i]), cimag(buf[i]));
+    printf("%s", s);
+    for (int i = 0; i < BITS; i++)
+    if (!cimag(buf[i]))
+        printf("%g ", creal(buf[i]));
+    else
+        printf("(%g, %g) ", creal(buf[i]), cimag(buf[i]));
     printf("\n"); 
 }
 
