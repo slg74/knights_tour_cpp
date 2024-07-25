@@ -105,13 +105,21 @@ int main()
     fft(buf_64, 64);
     show("\nFFT 64: ", buf_64, 64);
 
-    show("Data (128 bits): ", buf_128, 128);
-    fft(buf_128, 128);
-    show("\nFFT 128: ", buf_128, 128);
+    
+    //int i;
+    //for (i=0; i<293; ++i) {
+    //    printf("iteration: %d\n", i);
+        show("Data (128 bits): ", buf_128, 128);
+        fft(buf_128, 128);
+        show("\nFFT 128: ", buf_128, 128);
+    //}
 
-    show("Data (256 bits): ", buf_256, 256);
-    fft(buf_256, 256);
-    show("\nFFT 256: ", buf_256, 256);
+    for (int i=0; i<256; ++i) {
+        printf("iteration: %d\n", i);
+        show("Data (256 bits): ", buf_256, 256);
+        fft(buf_256, 256);
+        show("\nFFT 256: ", buf_256, 256);
+    }
 
     return 0;
 }
