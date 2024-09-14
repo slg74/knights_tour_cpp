@@ -45,6 +45,7 @@ bool walk_board(int x, int y, int m, std::vector<std::vector<int>>& board, const
         }
     }
 
+    // No solution.
     return false;
 }
 
